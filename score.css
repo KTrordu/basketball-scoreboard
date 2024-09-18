@@ -114,3 +114,7 @@ h3 {
 #reset-btn:hover {
     background-color: darkred;
 }
+
+#reset-btn:active {
+    background-color: black;
+}
