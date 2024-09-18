@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1B244A;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    color: white;
+    font-size: 80px;
+    font-family: 'digital-clock-two',
+    'digital-clock-one',
+    'digital-clock-four',
+    'digital-clock-three';
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+@font-face {
+    font-family: digital-clock-one;
+    src: url('/fonts/DS-DIGI.TTF');
+}
+
+@font-face {
+    font-family: digital-clock-two;
+    src: url('/fonts/DS-DIGIB.TTF');
+}
+
+@font-face {
+    font-family: digital-clock-three;
+    src: url('/fonts/DS-DIGII.TTF');
+}
+
+@font-face {
+    font-family: digital-clock-four;
+    src: url('/fonts/DS-DIGIT.TTF');
+}
+
+.count {
+    color: red;
+    font-size: 150px;
+    font-family: 'digital-clock-two',
+    'digital-clock-one',
+    'digital-clock-four',
+    'digital-clock-three';
+}
+    
+.child {
+    background-color: black;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.btn {
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: inherit;
+    color: wheat;
+    width: 55px;
+    height: 55px;
+    transition: 0.5s;
+    margin-right: 5px;
+    font-family: 'digital-clock-two',
+    'digital-clock-one',
+    'digital-clock-four',
+    'digital-clock-three';
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(6, 114, 15);
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background-color: rgb(3, 3, 63);
+    transform: scale(0.9);
+}
+
+.reset-btn-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset-btn {
+    width: 10vw;
+}
+
+#reset-btn:hover {
+    background-color: darkred;
+}

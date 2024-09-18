@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="score.css">
+    <link rel="icon" type="image/x-icon" href="/icon/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="parent">
+            <h3>HOME</h3>
+            <div id="home-board" class="child"><h1 class="count home-count">0</h1></div><br>
+            <div class="btn-cont">
+                <button class="btn" onclick="addHomeScore1()">+1</button>
+                <button class="btn" onclick="addHomeScore2()">+2</button>
+                <button class="btn" onclick="addHomeScore3()">+3</button>
+            </div>
+        </div>
+
+        <div class="parent">
+            <h3>GUEST</h3>
+            <div id="guest-board" class="child"><h1 class="count guest-count">0</h1></div><br>
+            <div class="btn-cont">
+                <button class="btn" onclick="addGuestScore1()">+1</button>
+                <button class="btn" onclick="addGuestScore2()">+2</button>
+                <button class="btn" onclick="addGuestScore3()">+3</button>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="reset-btn-cont">
+        <button id="reset-btn" onclick="resetBoard()" class="btn">RESET</button>
+    </div>
+
+    <script src="/js/score.js"></script>
+</body>
+</html>
